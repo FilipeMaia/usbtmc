@@ -11,8 +11,8 @@ logging.basicConfig(
 )
 
 # --- Oscilloscope Configuration ---
-SCOPE_VID = '0x0699' 
-SCOPE_PID = '0x03B3' # Note: PyVISA usually returns hex in uppercase
+SCOPE_VID = '1689' 
+SCOPE_PID = '947' # Note: PyVISA uses decimal for VID/PID
 
 WAVEFORM_SOURCE = 'CH2'
 NUM_CAPTURES = 100
