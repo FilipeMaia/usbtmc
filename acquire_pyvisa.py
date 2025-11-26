@@ -33,7 +33,7 @@ print("Searching for Instrument via VISA...")
 
 # --- VISA Connection Setup ---
 try:
-    rm = pyvisa.ResourceManager()
+    rm = pyvisa.ResourceManager('@py') # Use the PyVISA-py backend
     resources = rm.list_resources()
     
     # Filter the list of resources to find the one matching your VID and PID
